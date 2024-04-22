@@ -1,1 +1,1 @@
-//pantalla de juan con cambio
+//pantalla de juan
