@@ -21,9 +21,9 @@ class NotasNotifier extends StateNotifier<List<Nota>> {
     state = state.where((notaAhora) => notaAhora.id != id).toList();
   }
 
-  updateNota(Nota notaActualizada, String idNotaAntes) {
+  updateNota(Nota notaActualizada, String idNota) {
     state = state.map((notaAhora) {
-      if (notaAhora.id == idNotaAntes) {
+      if (notaAhora.id == idNota) {
         return notaActualizada;
       }
       return notaAhora;
